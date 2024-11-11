@@ -1,0 +1,133 @@
+@media screen and (max-width: 991px) {
+    .we_offer {
+        text-align: center;
+        background: linear-gradient(267.18deg, #161616 0%, #080808 100%);
+    }
+}
+
+.row.justify-content-center>div {
+    padding: 0 5px;
+}
+
+@media (max-width: 856px) {
+    .row.justify-content-center>div {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 425.98px) {
+    iframe {
+        width: 370px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 386px) {
+    iframe {
+        width: 300px;
+
+    }
+}
+
+/* Custom CSS for Bootstrap Table */
+.custom-table {
+    margin: auto;
+    text-align: center;
+    max-width: max-content;
+    background: linear-gradient(267.18deg, #161616 0%, #080808 100%);
+    border-radius: 10px;
+    color: orange;
+}
+
+.custom-table-content {
+    margin: auto;
+    text-align: center;
+    max-width: max-content;
+}
+
+.map-text {
+    /* Define styles for map text */
+}
+
+.map-text1 {
+    /* Define styles for map text */
+}
+
+.footer-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.footer-social a {
+    margin: 0 15px;
+}
+
+.cs-text_widget {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Add any additional styling if needed */
+}
+
+.cs-text_widget img {
+    /* Optionally, you can set a maximum width for the image */
+    max-width: 100%;
+    /* Adjust as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+
+.cs-footer_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* Align text content horizontally */
+    /* Add any additional styling if needed */
+}
+
+.cs-footer_item ul {
+    list-style: none;
+    /* Remove default list styles */
+    padding: 0;
+    /* Remove default padding */
+}
+
+.cs-newsletter {
+    text-align: center;
+    /* Align text content horizontally */
+    /* Add any additional styling if needed */
+}
+
+
+.cs-bottom_footer_right .cs-text_btn:hover span {
+    color: orangered;
+    /* Change the color on hover to your desired color */
+    /* Add any other hover effect styles here */
+}
+
+
+/* Our Result CSS  */
+.video-container {
+    max-width: 75%;
+    margin: auto;
+    border: 8px solid #333;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: black;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 875px) {
+    .video-container {
+        max-width: 100%;
+    }
+}
