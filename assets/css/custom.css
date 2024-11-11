@@ -1,3 +1,38 @@
+/* Hero section  */
+.wrapper {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    animation: fadeIn 1000ms ease;
+    color: #fff;
+}
+
+.wrapper h1 {
+    font-size: 64px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+    line-height: 1;
+    font-weight: 700;
+    text-align: center;
+}
+
+.wrapper .dot {
+    color: #ff7f57;
+}
+
+@keyframes fadeIn {
+    from {
+        top: 20%;
+        opacity: 0;
+    }
+
+    to {
+        top: 100;
+        opacity: 1;
+    }
+}
+
 @media screen and (max-width: 991px) {
     .we_offer {
         text-align: center;
@@ -45,14 +80,6 @@
     max-width: max-content;
 }
 
-.map-text {
-    /* Define styles for map text */
-}
-
-.map-text1 {
-    /* Define styles for map text */
-}
-
 .footer-social {
     display: flex;
     justify-content: space-between;
@@ -69,15 +96,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* Add any additional styling if needed */
 }
 
 .cs-text_widget img {
-    /* Optionally, you can set a maximum width for the image */
     max-width: 100%;
-    /* Adjust as needed */
     height: auto;
-    /* Maintain aspect ratio */
 }
 
 
@@ -86,28 +109,20 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    /* Align text content horizontally */
-    /* Add any additional styling if needed */
 }
 
 .cs-footer_item ul {
     list-style: none;
-    /* Remove default list styles */
     padding: 0;
-    /* Remove default padding */
 }
 
 .cs-newsletter {
     text-align: center;
-    /* Align text content horizontally */
-    /* Add any additional styling if needed */
 }
 
 
 .cs-bottom_footer_right .cs-text_btn:hover span {
     color: orangered;
-    /* Change the color on hover to your desired color */
-    /* Add any other hover effect styles here */
 }
 
 
