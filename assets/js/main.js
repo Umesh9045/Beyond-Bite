@@ -721,9 +721,9 @@
     if ($.exists('#amount')) {
       $('#amount').val(
         'Price: $' +
-          $('#slider-range').slider('values', 0) +
-          ' - $' +
-          $('#slider-range').slider('values', 1),
+        $('#slider-range').slider('values', 0) +
+        ' - $' +
+        $('#slider-range').slider('values', 1),
       );
     }
     // Counter
