@@ -51,14 +51,14 @@
 }
 
 @media (max-width: 425.98px) {
-    iframe {
+    .cs-video_popup iframe {
         width: 370px;
         height: 180px;
     }
 }
 
 @media (max-width: 386px) {
-    iframe {
+    .cs-video_popup iframe {
         width: 300px;
 
     }
@@ -149,7 +149,7 @@
 
 
 /* image slider  */
-*,
+/* *,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -157,7 +157,7 @@
 
 * {
   margin: 0;
-}
+} */
 
 .slider-wrapper {
   width: 90%;
