@@ -1,3 +1,12 @@
+.wrapper-nav h4 {
+    margin: 0 0 0 0;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .wrapper-nav .dot {
+    color: #ff7f57;
+  }
+
 /* Hero section  */
 .wrapper {
     position: absolute;
@@ -212,4 +221,5 @@
   .left .item5 { animation-delay: calc((-15s / 7) * 2); }
   .left .item6 { animation-delay: calc((-15s / 7) * 1); }
   .left .item7 { animation-delay: calc((-15s / 7) * 0); }
+  
   
