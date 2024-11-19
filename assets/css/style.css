@@ -684,13 +684,13 @@ input {
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
   border: transparent;
-  /* color: #fefefe; */
+  color: #fefefe;
   position: relative;
   line-height: 1.5em;
   font-weight: 600;
   border-radius: 15px;
   background-color: #ff4a17;
-  /* color: #fff; */
+  color: #fff;
   cursor: pointer
 }
 
