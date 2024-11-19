@@ -1,39 +1,13 @@
-/*--------------------------------------------------------------
->> TABLE OF CONTENTS:
-----------------------------------------------------------------
-1. Typography
-2. Preloader
-3. Spacing
-4. General
-5. Slider
-6. Video Popup
-7. Header
-8. Footer
-9. Isotope
-10. Sidebar
-11. Hero
-12. Iconbox
-13. Card
-14. Posts
-15. Team
-16. Imagebox
-17. CTA
-18. Timeline
-19. Testimonial
-20. Portfolio
-21. FunFact
-22. Pricing
-*/
 
 body,
 html {
-  color: rgba(254, 254, 254, .7);
+  /* color: rgba(254, 254, 254, .7); */
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.6em;
   overflow-x: hidden;
-  background-color: #181818
+  /* background-color: #181818 */
 }
 
 h1,
@@ -43,7 +17,7 @@ h4,
 h5,
 h6 {
   clear: both;
-  color: #fefefe;
+  /* color: #fefefe; */
   padding: 0;
   margin: 0 0 20px 0;
   font-weight: 600;
@@ -141,96 +115,9 @@ b {
 }
 
 input {
-  color: #fefefe
+  /* color: #fefefe */
 }
 
-.cs-preloader {
-  position: fixed;
-  z-index: 99999;
-  top: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: #181818
-}
-
-.cs-preloader_bg {
-  text-align: center;
-  height: 100%;
-  width: 100%
-}
-
-.cs-preloader_in {
-  width: 120px;
-  height: 120px;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 28px;
-  border: 3px solid rgba(255, 255, 255, .8);
-  border-radius: 50%
-}
-
-.cs-preloader_in:after {
-  content: "";
-  border-width: 3px;
-  border-style: solid;
-  border-color: transparent;
-  border-top-color: #ff4a17;
-  border-radius: 50%;
-  position: absolute;
-  width: calc(100% + 6px);
-  height: calc(100% + 6px);
-  left: 50%;
-  top: 50%;
-  -webkit-animation: spin 1s ease-in-out infinite;
-  animation: spin 1s ease-in-out infinite;
-  margin-left: -60px;
-  margin-top: -60px
-}
-
-.cs-preloader_in::before {
-  content: "";
-  height: 8px;
-  width: 8px;
-  border-radius: 50%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  background-color: #ff4a17
-}
-
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0)
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg)
-  }
-}
-
-@keyframes spin {
-  0% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0)
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg)
-  }
-}
 
 @media screen and (min-width:992px) {
   .cs-height_0 {
@@ -690,7 +577,7 @@ input {
 }
 
 .cs-primary_color {
-  color: #fefefe
+  /* color: #fefefe */
 }
 
 .cs-accent_color,
@@ -709,7 +596,7 @@ input {
 
 .cs-primary_bg,
 .cs-primary_bg_hover:hover {
-  background-color: #fefefe
+  /* background-color: #fefefe */
 }
 
 .cs-text_btn {
@@ -720,7 +607,7 @@ input {
   -ms-flex-align: center;
   align-items: center;
   font-weight: 600;
-  color: #fff
+  /* color: #fff */
 }
 
 .cs-text_btn svg {
@@ -797,13 +684,13 @@ input {
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
   border: transparent;
-  color: #fefefe;
+  /* color: #fefefe; */
   position: relative;
   line-height: 1.5em;
   font-weight: 600;
   border-radius: 15px;
   background-color: #ff4a17;
-  color: #fff;
+  /* color: #fff; */
   cursor: pointer
 }
 
@@ -878,12 +765,12 @@ input {
   height: 40px;
   width: 40px;
   border-radius: 5px;
-  background-color: #000
+  /* background-color: #000 */
 }
 
 .cs-pagination_item.active {
   background-color: #ff4a17;
-  color: #fff;
+  /* color: #fff; */
   pointer-events: none
 }
 
@@ -950,7 +837,7 @@ input {
   height: 20px;
   width: 2px;
   border-radius: 2px;
-  background-color: #fff;
+  /* background-color: #fff; */
   position: absolute;
   right: 0;
   top: 50%;
@@ -1164,7 +1051,7 @@ input {
 }
 
 .cs-moving_text_wrap.cs-type2 {
-  color: #fff;
+  /* color: #fff; */
   -webkit-text-stroke: initial
 }
 
@@ -2983,7 +2870,7 @@ input {
   cursor: pointer;
   border: 2px solid currentColor;
   border-radius: 50%;
-  color: #fff
+  /* color: #fff */
 }
 
 .cs-site_header.cs-style1 .cs-icon_btn .cs-icon_btn_in {
@@ -3340,7 +3227,7 @@ input {
     height: 100%;
     font-size: 15px;
     line-height: 1.6em;
-    color: #fff
+    /* color: #fff */
   }
 
   .cs-nav .cs-nav_list {
@@ -3580,6 +3467,7 @@ input {
     width: 100vw;
     left: -15px;
     background-color: #181818;
+    color: white;
     padding: 10px 0;
     display: none;
     top: 100%;
@@ -4413,7 +4301,7 @@ input {
   height: 35px;
   width: 20px;
   border-radius: 10px;
-  border: 2px solid #fff;
+  border: 2px solid #ff4a17;
   bottom: 25%;
   left: 50%;
   margin-left: -10px

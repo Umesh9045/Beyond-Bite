@@ -6,6 +6,25 @@
 .wrapper-nav .dot {
     color: #ff7f57
 }
+.cs-main_header {
+    background-color: #f6fcfe;
+    margin-top: 0;
+    /* border-bottom: 1px solid #ffffff; */
+}
+body{
+    padding-top: 0;
+    background-color: #f6fcfe;
+}
+
+.cs-hero.cs-style1 {
+    padding-bottom: 0;
+    /* height: max-content; */
+    min-height: 800px;
+}
+
+.cs-pricing_table.cs-style1 {
+    color: white;
+}
 
 /* Hero section  */
 .wrapper {
@@ -14,7 +33,7 @@
     top: 40%;
     transform: translate(-50%, -50%);
     animation: fadeIn 1s ease;
-    color: #fff
+    /* color: #fff */
 }
 
 .wrapper h1 {
