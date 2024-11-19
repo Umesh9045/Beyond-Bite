@@ -6,14 +6,21 @@
 .wrapper-nav .dot {
     color: #ff7f57
 }
+
 .cs-main_header {
-    background-color: #f6fcfe;
+    background-color: transparent;
     margin-top: 0;
-    /* border-bottom: 1px solid #ffffff; */
+    color: #5a3a3a;
 }
-body{
+
+.cs-gescout_sticky{
+    background-color: #ffffff;
+}
+
+body {
     padding-top: 0;
     background-color: #f6fcfe;
+    color: #5a3a3a;
 }
 
 .cs-hero.cs-style1 {
