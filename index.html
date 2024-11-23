@@ -201,7 +201,7 @@
     <!-- End Hero -->
 
     <!-- Horizontal wording starts  -->
-    <section id="Horizontal-words">
+    <!-- <section id="Horizontal-words">
         <div class="cs-height_45 cs-height_lg_30"></div>
         <div class="cs-moving_text_wrap cs-type1 cs-bold cs-primary_font">
             <div class="cs-moving_text_in">
@@ -219,7 +219,7 @@
             </div>
         </div>
         <div class="cs-height_100 cs-height_lg_80"></div>
-    </section>
+    </section> -->
     <!-- Horizontal wording ends  -->
 
     <!-- Tagline banner starts  -->
@@ -259,7 +259,7 @@
                 <div class="col-lg-6 offset-xl-1">
                     <h2 class="cs-font_50 cs-m0">One Bite Snack - <br><span class="cs-accent_color">Energy Balls </span>
                     </h2>
-                    <div class="cs-height_50 cs-height_lg_30"></div>
+                    <div class="cs-height_20 cs-height_lg_30"></div>
                     <div class="row">
                         <div class="col-lg-12">
                             <ul class="cs-list cs-style1 cs-mp0">
@@ -892,46 +892,44 @@
         }
 
         var pdfPopup_buttons = document.querySelectorAll('.pdfPopup_button');
-var pdfPopup_popups = document.querySelectorAll('.pdfPopup_popup');
-var pdfPopup_iframes = document.querySelectorAll('.pdfPopup_myIframe');
+        var pdfPopup_popups = document.querySelectorAll('.pdfPopup_popup');
+        var pdfPopup_iframes = document.querySelectorAll('.pdfPopup_myIframe');
 
-// Open popup and disable scrolling on the outer page
-pdfPopup_buttons.forEach((button) => {
-    button.addEventListener('click', function () {
-        var buttonPDFLink = this.getAttribute("data-href"); // Get the PDF link
+        // Open popup and disable scrolling on the outer page
+        pdfPopup_buttons.forEach((button) => {
+            button.addEventListener('click', function () {
+                var buttonPDFLink = this.getAttribute("data-href"); // Get the PDF link
+                pdfPopup_popups.forEach((popup) => {
+                    popup.style.display = 'flex'; // Show the popup
+                });
+                pdfPopup_iframes.forEach((iframe) => {
+                    iframe.setAttribute("src", buttonPDFLink); // Set the iframe source
+                });
+                document.body.classList.add('pdfPopup_noScroll'); // Disable outer page scrolling
+            });
+        });
+
+        // Close popup when clicking the close button
         pdfPopup_popups.forEach((popup) => {
-            popup.style.display = 'flex'; // Show the popup
-        });
-        pdfPopup_iframes.forEach((iframe) => {
-            iframe.setAttribute("src", buttonPDFLink); // Set the iframe source
-        });
-        document.body.classList.add('pdfPopup_noScroll'); // Disable outer page scrolling
-    });
-});
-
-// Close popup when clicking the close button
-pdfPopup_popups.forEach((popup) => {
-    popup.addEventListener('click', function (event) {
-        // Check if the clicked element is the close button
-        if (event.target.classList.contains('pdfPopup_close')) {
-            popup.style.display = 'none'; // Hide the popup
-            pdfPopup_iframes.forEach((iframe) => {
-                iframe.removeAttribute("src"); // Clear iframe source
+            popup.addEventListener('click', function (event) {
+                // Check if the clicked element is the close button
+                if (event.target.classList.contains('pdfPopup_close')) {
+                    popup.style.display = 'none'; // Hide the popup
+                    pdfPopup_iframes.forEach((iframe) => {
+                        iframe.removeAttribute("src"); // Clear iframe source
+                    });
+                    document.body.classList.remove('pdfPopup_noScroll'); // Re-enable scrolling
+                }
+                // Check if the clicked element is the background (popup itself)
+                else if (event.target === popup) {
+                    popup.style.display = 'none'; // Hide the popup
+                    pdfPopup_iframes.forEach((iframe) => {
+                        iframe.removeAttribute("src"); // Clear iframe source
+                    });
+                    document.body.classList.remove('pdfPopup_noScroll'); // Re-enable scrolling
+                }
             });
-            document.body.classList.remove('pdfPopup_noScroll'); // Re-enable scrolling
-        }
-        // Check if the clicked element is the background (popup itself)
-        else if (event.target === popup) {
-            popup.style.display = 'none'; // Hide the popup
-            pdfPopup_iframes.forEach((iframe) => {
-                iframe.removeAttribute("src"); // Clear iframe source
-            });
-            document.body.classList.remove('pdfPopup_noScroll'); // Re-enable scrolling
-        }
-    });
-});
-
-
+        });
     </script>
 </body>
 

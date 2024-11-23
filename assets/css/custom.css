@@ -19,8 +19,9 @@
 
 body {
     padding-top: 0;
-    background-color: #f6fcfe;
+    /* background-color: #f6fcfe; */
     color: #5a3a3a;
+    background: radial-gradient( #fff7ad, #ffa9f9);
 }
 
 #home {
