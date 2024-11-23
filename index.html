@@ -172,7 +172,7 @@
                 <div class="cs-slider_wrapper">
                     <div class="cs-slide">
                         <!-- <div class="cs-hero_slide cs-fixed_bg cs-bg" data-src="assets/img/hero_bg_3.jpeg"></div> -->
-                        <div class="cs-hero_slide cs-fixed_bg cs-bg" data-src="assets/img/BB/bg_img.png"></div>
+                        <!-- <div class="cs-hero_slide cs-fixed_bg cs-bg" data-src="assets/img/BB/bg_img.png"></div> -->
                     </div>
                 </div>
             </div>
@@ -891,35 +891,45 @@
             return true;
         }
 
-
         var pdfPopup_buttons = document.querySelectorAll('.pdfPopup_button');
-        var pdfPopup_closeButtons = document.querySelectorAll('.pdfPopup_close');
-        var pdfPopup_popups = document.querySelectorAll('.pdfPopup_popup');
-        var pdfPopup_iframes = document.querySelectorAll('.pdfPopup_myIframe');
+var pdfPopup_popups = document.querySelectorAll('.pdfPopup_popup');
+var pdfPopup_iframes = document.querySelectorAll('.pdfPopup_myIframe');
 
-        pdfPopup_buttons.forEach((button) => {
-            button.addEventListener('click', function () {
-                var buttonPDFLink = this.getAttribute("data-href"); // Relative or absolute path to the PDF
-                pdfPopup_popups.forEach((popup) => {
-                    popup.style.display = 'flex'; // Show the popup
-                });
-                pdfPopup_iframes.forEach((iframe) => {
-                    iframe.setAttribute("src", buttonPDFLink); // Set the iframe's source to the PDF path
-                });
-            });
+// Open popup and disable scrolling on the outer page
+pdfPopup_buttons.forEach((button) => {
+    button.addEventListener('click', function () {
+        var buttonPDFLink = this.getAttribute("data-href"); // Get the PDF link
+        pdfPopup_popups.forEach((popup) => {
+            popup.style.display = 'flex'; // Show the popup
         });
-
-        pdfPopup_closeButtons.forEach((closeButton) => {
-            closeButton.addEventListener('click', function () {
-                pdfPopup_popups.forEach((popup) => {
-                    popup.style.display = 'none'; // Hide the popup
-                });
-                pdfPopup_iframes.forEach((iframe) => {
-                    iframe.removeAttribute("src"); // Clear the iframe's source
-                });
-            });
+        pdfPopup_iframes.forEach((iframe) => {
+            iframe.setAttribute("src", buttonPDFLink); // Set the iframe source
         });
+        document.body.classList.add('pdfPopup_noScroll'); // Disable outer page scrolling
+    });
+});
 
+// Close popup when clicking the close button
+pdfPopup_popups.forEach((popup) => {
+    popup.addEventListener('click', function (event) {
+        // Check if the clicked element is the close button
+        if (event.target.classList.contains('pdfPopup_close')) {
+            popup.style.display = 'none'; // Hide the popup
+            pdfPopup_iframes.forEach((iframe) => {
+                iframe.removeAttribute("src"); // Clear iframe source
+            });
+            document.body.classList.remove('pdfPopup_noScroll'); // Re-enable scrolling
+        }
+        // Check if the clicked element is the background (popup itself)
+        else if (event.target === popup) {
+            popup.style.display = 'none'; // Hide the popup
+            pdfPopup_iframes.forEach((iframe) => {
+                iframe.removeAttribute("src"); // Clear iframe source
+            });
+            document.body.classList.remove('pdfPopup_noScroll'); // Re-enable scrolling
+        }
+    });
+});
 
 
     </script>

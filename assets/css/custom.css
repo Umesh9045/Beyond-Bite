@@ -17,19 +17,20 @@
     background-color: #ffffff;
 }
 
-.cs-nav_list {
-    /* font-weight: 549; */
-}
-
 body {
     padding-top: 0;
     background-color: #f6fcfe;
     color: #5a3a3a;
 }
 
+#home {
+    background: radial-gradient(circle at 50% 50%, #fff7ad, #ffa9f9);
+    width: 100%;
+    height: 100vh;
+}
+
 .cs-hero.cs-style1 {
     padding-bottom: 0;
-    /* height: max-content; */
     min-height: 800px;
 }
 
@@ -258,13 +259,14 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.8); /* Slightly darker overlay for clarity */
     display: flex;
     align-items: center;
     justify-content: center;
     display: none;
 }
 
+/* Add this to make the popup content scrollable */
 .pdfPopup_popupIn {
     width: 80%;
     max-width: 800px;
@@ -273,7 +275,7 @@ body {
     position: relative;
     background: #fff;
     border-radius: 10px;
-    overflow: hidden;
+    overflow-y: auto; /* Allow vertical scrolling */
 }
 
 .pdfPopup_frameSide,
@@ -290,4 +292,11 @@ body {
     font-size: 20px;
     cursor: pointer;
     color: #000;
+}
+
+/* Disable scrolling on the main page */
+body.pdfPopup_noScroll {
+    overflow: hidden !important; /* Ensure no scrolling */
+    position: fixed;
+    width: 100%;
 }
