@@ -15,6 +15,7 @@
 
 .cs-gescout_sticky {
     background-color: #ffffff;
+    /* background: radial-gradient(circle at 50% 50%, #fff7ad, #ffa9f9); */
 }
 
 body {
@@ -244,14 +245,9 @@ body {
     margin: 20px 0;
 }
 
-.pdfPopup_card {
-/*     margin: 15px; */
-}
-
 .pdfPopup_button {
     cursor: pointer;
 }
-
 
 /* Pop Up */
 .pdfPopup_popup {
