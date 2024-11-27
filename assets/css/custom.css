@@ -314,11 +314,10 @@ body.pdfPopup_noScroll {
 /* Mobile adjustments */
 @media screen and (max-width: 768px) {
     .pdfPopup_popupIn {
-        max-height: 40%;
+        max-height: 30%;
     }
 
     .pdfPopup_close {
-        font-size: 14px;
-        height: 40px;
+        height: 60px;
     }
 }
