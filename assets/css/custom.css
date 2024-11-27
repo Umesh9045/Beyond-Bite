@@ -314,16 +314,11 @@ body.pdfPopup_noScroll {
 /* Mobile adjustments */
 @media screen and (max-width: 768px) {
     .pdfPopup_popupIn {
-        /* width: 90%; */
         max-height: 40%;
     }
 
-    /* .pdfPopup_myIframe {
-        height: calc(85vh - 50px);
-    } */
-
-    /* .pdfPopup_close {
+    .pdfPopup_close {
         font-size: 14px;
         height: 40px;
-    } */
+    }
 }
