@@ -22,7 +22,7 @@ body {
     padding-top: 0;
     /* background-color: #f6fcfe; */
     color: #5a3a3a;
-    background: radial-gradient( #fff7ad, #ffa9f9);
+    background: radial-gradient(#fff7ad, #ffa9f9);
 }
 
 #home {
@@ -257,6 +257,7 @@ body {
     width: 100%;
     height: 100%;
     /* background: rgba(0, 0, 0, 0.8);  */
+    background: radial-gradient(#fff7ad, #ffa9f9);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -276,7 +277,7 @@ body {
     /* overflow-y: auto;  */
 }
 
-.pdfPopup_frameSide{
+.pdfPopup_frameSide {
     margin-top: 30px;
 }
 
@@ -291,18 +292,38 @@ body {
     position: absolute;
     top: 0px;
     height: 30px;
-    width: 100%;   
+    width: 100%;
     cursor: pointer;
     color: #5a3a3a;
     background: #f6bebe;
     border: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     text-align: center;
     font-weight: bold;
 }
 
 /* Disable scrolling on the main page */
 body.pdfPopup_noScroll {
-    overflow: hidden !important; /* Ensure no scrolling */
+    overflow: hidden !important;
+    /* Ensure no scrolling */
     position: fixed;
     width: 100%;
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 768px) {
+    .pdfPopup_popupIn {
+        /* width: 90%; */
+        max-height: 40%;
+    }
+
+    /* .pdfPopup_myIframe {
+        height: calc(85vh - 50px);
+    } */
+
+    /* .pdfPopup_close {
+        font-size: 14px;
+        height: 40px;
+    } */
 }
