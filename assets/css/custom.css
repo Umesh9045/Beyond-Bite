@@ -256,11 +256,12 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8); /* Slightly darker overlay for clarity */
+    /* background: rgba(0, 0, 0, 0.8);  */
     display: flex;
     align-items: center;
     justify-content: center;
     display: none;
+    margin: 0;
 }
 
 /* Add this to make the popup content scrollable */
@@ -272,7 +273,11 @@ body {
     position: relative;
     background: #fff;
     border-radius: 10px;
-    overflow-y: auto; /* Allow vertical scrolling */
+    /* overflow-y: auto;  */
+}
+
+.pdfPopup_frameSide{
+    margin-top: 30px;
 }
 
 .pdfPopup_frameSide,
@@ -284,11 +289,15 @@ body {
 
 .pdfPopup_close {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 20px;
+    top: 0px;
+    height: 30px;
+    width: 100%;   
     cursor: pointer;
-    color: #000;
+    color: #5a3a3a;
+    background: #f6bebe;
+    border: 0px;
+    text-align: center;
+    font-weight: bold;
 }
 
 /* Disable scrolling on the main page */
