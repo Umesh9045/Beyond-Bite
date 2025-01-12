@@ -22,8 +22,38 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/custom.css">
 </head>
+<style>
+    .topnav {
+        /* background-color: #f4c3c3; */
+        background: linear-gradient(to right, transparent, #f4c3c3, transparent);
+        color: green;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        position: fixed;
+        /* Fixes the nav at the top */
+        top: 0;
+        /* Ensures it sticks to the top */
+        left: 0;
+        width: 100%;
+        /* Makes it span the full width of the screen */
+        z-index: 1000;
+        /* Ensures it stays above other elements */
+    }
+    /* Mobile-specific styles */
+@media (max-width: 768px) {
+    .topnav {
+        background: linear-gradient(to right, transparent, #e2c4c4, transparent);
+        /* background: #e2c4c4; Solid background for mobile */
+        margin-bottom: 5px; /* Space below the navbar */
+    }
+}
+</style>
 
 <body>
+    <div class="topnav">
+        <p>Website experience updating soon! </p>
+    </div>
     <!-- Start Header Section -->
     <section id="header_section">
         <header class="cs-site_header cs-style1 text-uppercase cs-sticky_header">
@@ -43,12 +73,12 @@
                                     <li>
                                         <a href="#home">Home</a>
                                     </li>
-                                    <li><a href="#product">Product</a></li>
+                                    <li><a href="#product">Products</a></li>
                                     <!-- <li><a href="#ingredients">Ingredients</a></li> -->
                                     <!-- <li><a href="#pricing">Pricing</a></li> -->
 
-                                    <li><a href="#about-us">About Us</a>
-                                    <li><a href="contact.html">Contact Us</a>
+                                    <li><a href="#about-us">About Us</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -202,7 +232,7 @@
                 </a>
             </div>
         </div>
-        
+
 
         <!-- <a href="#Horizontal-words" class="cs-down_btn"></a> -->
     </div>
