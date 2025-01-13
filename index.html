@@ -40,20 +40,22 @@
         z-index: 1000;
         /* Ensures it stays above other elements */
     }
+
     /* Mobile-specific styles */
-@media (max-width: 768px) {
-    .topnav {
-        background: linear-gradient(to right, transparent, #e2c4c4, transparent);
-        /* background: #e2c4c4; Solid background for mobile */
-        margin-bottom: 5px; /* Space below the navbar */
+    @media (max-width: 768px) {
+        .topnav {
+            background: linear-gradient(to right, transparent, #e2c4c4, transparent);
+            /* background: #e2c4c4; Solid background for mobile */
+            margin-bottom: 5px;
+            /* Space below the navbar */
+        }
     }
-}
 </style>
 
 <body>
-    <div class="topnav">
+    <!-- <div class="topnav">
         <p>Website experience updating soon! </p>
-    </div>
+    </div> -->
     <!-- Start Header Section -->
     <section id="header_section">
         <header class="cs-site_header cs-style1 text-uppercase cs-sticky_header">
@@ -290,66 +292,63 @@
             <div class="cs-height_90 cs-height_lg_45"></div>
         </div>
         <!-- Product 1  -->
-        <div class="cs-portfolio cs-style2">
-            <div class="cs-gradient_shape"></div>
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-5">
-                        <div class="cs-portfolio_img">
-                            <!-- <h3 class="cs-portfolio_img_title">Healthy BreakFast</h3> -->
-                            <div class="cs-portfolio_img_in cs-shine_hover_1" style="border-radius: 20px;">
-                                <img src="assets/img/BB/laddu.png" alt="Portfolio" class="cs-w100">
-                            </div>
-                        </div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-5 col-lg-5">
+                    <div class="cs-portfolio_img_in cs-shine_hover_1" style="border-radius: 20px;">
+                        <img src="assets/img/BB/laddu.png" alt="Portfolio" class="cs-w100">
                     </div>
-                    <div class="col-xl-5 col-lg-7 offset-xl-1">
-                        <div class="cs-height_0 cs-height_lg_35"></div>
-                        <div class="cs-section_heading cs-style1">
-                            <!-- <h3 class="cs-section_subtitle">Project 01</h3> -->
-                            <h2 class="cs-font_50 cs-m0">One Bite Snack - <br><span class="cs-accent_color">Nutri
-                                    Balls</span>
-                            </h2>
-                            <!-- <h2 class="cs-section_title">Energy Balls</h2> -->
-                            <div class="cs-height_45 cs-height_lg_20"></div>
-                            <div class="col-lg-12">
-                                <ul class="cs-list cs-style1 cs-mp0">
-                                    <li>
-                                        <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
-                                            data-wow-delay="0.3s">
-                                            <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
-                                                    fill="#FF4A17" />
-                                            </svg>
-                                            <span>Delicious & Healthy Snack Option</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
-                                            data-wow-delay="0.3s">
-                                            <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
-                                                    fill="#FF4A17" />
-                                            </svg>
-                                            <span>Home maded by mom's hand magic</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
-                                            data-wow-delay="0.3s">
-                                            <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
-                                                    fill="#FF4A17" />
-                                            </svg>
-                                            <span>Only Natural Ingredients</span>
-                                        </a>
-                                    </li>
-                                    <!-- <li>
+                    <div class="cs-height_0 cs-height_lg_40"></div>
+                </div>
+                <div class="col-lg-6 offset-xl-1">
+                    <div class="cs-height_0 cs-height_lg_0"></div>
+                    <div class="cs-section_heading cs-style1 ">
+                        <!-- <h3 class="cs-section_subtitle">Project 01</h3> -->
+                        <h2 class="cs-font_50 cs-m0 product-title">One Bite Snack - <br><span
+                                class="cs-accent_color">Nutri
+                                Balls</span>
+                        </h2>
+                        <!-- <h2 class="cs-section_title">Energy Balls</h2> -->
+                        <div class="cs-height_45 cs-height_lg_20"></div>
+                        <div class="col-lg-12">
+                            <ul class="cs-list cs-style1 cs-mp0 product-description">
+                                <li>
+                                    <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
+                                        data-wow-delay="0.3s">
+                                        <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
+                                                fill="#FF4A17" />
+                                        </svg>
+                                        <span>Delicious & Healthy Snack Option</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
+                                        data-wow-delay="0.3s">
+                                        <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
+                                                fill="#FF4A17" />
+                                        </svg>
+                                        <span>Home maded by mom's hand magic</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
+                                        data-wow-delay="0.3s">
+                                        <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
+                                                fill="#FF4A17" />
+                                        </svg>
+                                        <span>Only Natural Ingredients</span>
+                                    </a>
+                                </li>
+                                <!-- <li>
                                         <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
                                             data-wow-delay="0.3s">
                                             <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
@@ -361,43 +360,43 @@
                                             <span>Balanced formulation by Experts</span>
                                         </a>
                                     </li> -->
-                                    <li>
-                                        <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
-                                            data-wow-delay="0.3s">
-                                            <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
-                                                    fill="#FF4A17" />
-                                            </svg>
-                                            <span>No added preservetives</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
-                                            data-wow-delay="0.3s">
-                                            <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
-                                                    fill="#FF4A17" />
-                                            </svg>
-                                            <span>No added sugar</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
-                                            data-wow-delay="0.3s">
-                                            <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
-                                                    fill="#FF4A17" />
-                                            </svg>
-                                            <span>100% Organic & Sustainable</span>
-                                        </a>
-                                    </li>
-                                    <!-- <li>
+                                <li>
+                                    <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
+                                        data-wow-delay="0.3s">
+                                        <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
+                                                fill="#FF4A17" />
+                                        </svg>
+                                        <span>No added preservetives</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
+                                        data-wow-delay="0.3s">
+                                        <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
+                                                fill="#FF4A17" />
+                                        </svg>
+                                        <span>No added sugar</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
+                                        data-wow-delay="0.3s">
+                                        <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
+                                                fill="#FF4A17" />
+                                        </svg>
+                                        <span>100% Organic & Sustainable</span>
+                                    </a>
+                                </li>
+                                <!-- <li>
                                         <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
                                             data-wow-delay="0.3s">
                                             <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
@@ -409,19 +408,20 @@
                                             <span>Accessible Healthy Living</span>
                                         </a>
                                     </li> -->
-                                </ul>
-                            </div>
+                            </ul>
                             <div class="cs-height_45 cs-height_lg_20"></div>
-                            <a href="products/product-energy-balls.html" class="cs-text_btn wow fadeInLeft"
-                                data-wow-duration="0.8s" data-wow-delay="0.2s">
-                                <span>Know More</span>
-                                <svg width="26" height="12" viewBox="0 0 26 12" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M25.5303 6.53033C25.8232 6.23744 25.8232 5.76256 25.5303 5.46967L20.7574 0.696699C20.4645 0.403806 19.9896 0.403806 19.6967 0.696699C19.4038 0.989593 19.4038 1.46447 19.6967 1.75736L23.9393 6L19.6967 10.2426C19.4038 10.5355 19.4038 11.0104 19.6967 11.3033C19.9896 11.5962 20.4645 11.5962 20.7574 11.3033L25.5303 6.53033ZM0 6.75H25V5.25H0V6.75Z"
-                                        fill="currentColor"></path>
-                                </svg>
-                            </a>
+                            <div class="product-title">
+                                <a href="products/product-energy-balls.html" class="cs-text_btn wow fadeInLeft "
+                                    data-wow-duration="0.8s" data-wow-delay="0.2s">
+                                    <span>Know More</span>
+                                    <svg width="26" height="12" viewBox="0 0 26 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M25.5303 6.53033C25.8232 6.23744 25.8232 5.76256 25.5303 5.46967L20.7574 0.696699C20.4645 0.403806 19.9896 0.403806 19.6967 0.696699C19.4038 0.989593 19.4038 1.46447 19.6967 1.75736L23.9393 6L19.6967 10.2426C19.4038 10.5355 19.4038 11.0104 19.6967 11.3033C19.9896 11.5962 20.4645 11.5962 20.7574 11.3033L25.5303 6.53033ZM0 6.75H25V5.25H0V6.75Z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -429,136 +429,222 @@
         </div>
         <!-- Product 2  -->
         <div class="cs-height_100 cs-height_lg_70"></div>
-        <div class="cs-portfolio cs-style2 cs-type1">
-            <div class="cs-gradient_shape"></div>
-            <div class="container">
-                <div class="row align-items-center cs-column_reverse_lg">
-                    <div class="col-xl-5 col-lg-7">
-                        <div class="cs-height_0 cs-height_lg_35"></div>
-                        <div class="cs-section_heading cs-style1">
-                            <!-- <h3 class="cs-section_subtitle">Project 01</h3> -->
-                            <h2 class="cs-font_50 cs-m0">Healthy Snack - <br><span class="cs-accent_color">Kesar
-                                    Kulfi</span>
-                            </h2>
+        <div class="container even-product">
+            <div class="row align-items-center">
+                <div class="col-lg-6 offset-xl-1">
+                    <div class="cs-height_0 cs-height_lg_0"></div>
+                    <div class="cs-section_heading cs-style1 ">
+                        <!-- <h3 class="cs-section_subtitle">Project 01</h3> -->
+                        <h2 class="cs-font_50 cs-m0">Healthy Snack - <br><span class="cs-accent_color">Kesar
+                                Kulfi</span>
+                        </h2>
+                        <div class="cs-height_45 cs-height_lg_20"></div>
+                        <div class="col-lg-12">
+                            <ul class="cs-list cs-style1 cs-mp0 product-description">
+                                <li>
+                                    <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
+                                        data-wow-delay="0.3s">
+                                        <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
+                                                fill="#FF4A17" />
+                                        </svg>
+                                        <span>Delicious & Healthy Snack Option</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
+                                        data-wow-delay="0.3s">
+                                        <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
+                                                fill="#FF4A17" />
+                                        </svg>
+                                        <span>Home maded by mom's hand magic</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
+                                        data-wow-delay="0.3s">
+                                        <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
+                                                fill="#FF4A17" />
+                                        </svg>
+                                        <span>Only Natural Ingredients</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
+                                        data-wow-delay="0.3s">
+                                        <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
+                                                fill="#FF4A17" />
+                                        </svg>
+                                        <span>No added preservetives</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
+                                        data-wow-delay="0.3s">
+                                        <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
+                                                fill="#FF4A17" />
+                                        </svg>
+                                        <span>No added sugar</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
+                                        data-wow-delay="0.3s">
+                                        <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
+                                                fill="#FF4A17" />
+                                        </svg>
+                                        <span>100% Organic & Sustainable</span>
+                                    </a>
+                                </li>
+                            </ul>
                             <div class="cs-height_45 cs-height_lg_20"></div>
-                            <div class="col-lg-12">
-                                <ul class="cs-list cs-style1 cs-mp0">
-                                    <li>
-                                        <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
-                                            data-wow-delay="0.3s">
-                                            <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
-                                                    fill="#FF4A17" />
-                                            </svg>
-                                            <span>Delicious & Healthy Snack Option</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
-                                            data-wow-delay="0.3s">
-                                            <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
-                                                    fill="#FF4A17" />
-                                            </svg>
-                                            <span>Home maded by mom's hand magic</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
-                                            data-wow-delay="0.3s">
-                                            <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
-                                                    fill="#FF4A17" />
-                                            </svg>
-                                            <span>Only Natural Ingredients</span>
-                                        </a>
-                                    </li>
-                                    <!-- <li>
-                                        <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
-                                            data-wow-delay="0.3s">
-                                            <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
-                                                    fill="#FF4A17" />
-                                            </svg>
-                                            <span>Balanced formulation by Experts</span>
-                                        </a>
-                                    </li> -->
-                                    <li>
-                                        <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
-                                            data-wow-delay="0.3s">
-                                            <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
-                                                    fill="#FF4A17" />
-                                            </svg>
-                                            <span>No added preservetives</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
-                                            data-wow-delay="0.3s">
-                                            <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
-                                                    fill="#FF4A17" />
-                                            </svg>
-                                            <span>No added sugar</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
-                                            data-wow-delay="0.3s">
-                                            <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
-                                                    fill="#FF4A17" />
-                                            </svg>
-                                            <span>100% Organic & Sustainable</span>
-                                        </a>
-                                    </li>
-                                    <!-- <li>
-                                        <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
-                                            data-wow-delay="0.3s">
-                                            <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
-                                                    fill="#FF4A17" />
-                                            </svg>
-                                            <span>Accessible Healthy Living</span>
-                                        </a>
-                                    </li> -->
-                                </ul>
+                            <div class="product-title">
+                                <a href="products/product-energy-balls.html" class="cs-text_btn wow fadeInLeft "
+                                    data-wow-duration="0.8s" data-wow-delay="0.2s">
+                                    <span>Know More</span>
+                                    <svg width="26" height="12" viewBox="0 0 26 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M25.5303 6.53033C25.8232 6.23744 25.8232 5.76256 25.5303 5.46967L20.7574 0.696699C20.4645 0.403806 19.9896 0.403806 19.6967 0.696699C19.4038 0.989593 19.4038 1.46447 19.6967 1.75736L23.9393 6L19.6967 10.2426C19.4038 10.5355 19.4038 11.0104 19.6967 11.3033C19.9896 11.5962 20.4645 11.5962 20.7574 11.3033L25.5303 6.53033ZM0 6.75H25V5.25H0V6.75Z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                </a>
                             </div>
-                            <div class="cs-height_45 cs-height_lg_20"></div>
-                            <a href="products/product-energy-balls.html" class="cs-text_btn wow fadeInLeft"
-                                data-wow-duration="0.8s" data-wow-delay="0.2s">
-                                <span>Know More</span>
-                                <svg width="26" height="12" viewBox="0 0 26 12" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M25.5303 6.53033C25.8232 6.23744 25.8232 5.76256 25.5303 5.46967L20.7574 0.696699C20.4645 0.403806 19.9896 0.403806 19.6967 0.696699C19.4038 0.989593 19.4038 1.46447 19.6967 1.75736L23.9393 6L19.6967 10.2426C19.4038 10.5355 19.4038 11.0104 19.6967 11.3033C19.9896 11.5962 20.4645 11.5962 20.7574 11.3033L25.5303 6.53033ZM0 6.75H25V5.25H0V6.75Z"
-                                        fill="currentColor"></path>
-                                </svg>
-                            </a>
                         </div>
                     </div>
-                    <div class="col-lg-5 offset-xl-1">
-                        <div class="cs-portfolio_img">
-                            <!-- <h3 class="cs-portfolio_img_title">Website</h3> -->
-                            <div class="cs-portfolio_img_in cs-shine_hover_1" style="border-radius: 20px;">
-                                <img src="assets/img/BB/laddu.png" alt="Portfolio" class="cs-w100">
+                </div>
+                <div class="col-xl-5 col-lg-5">
+                    <div class="cs-portfolio_img_in cs-shine_hover_1" style="border-radius: 20px;">
+                        <img src="assets/img/BB/laddu.png" alt="Portfolio" class="cs-w100">
+                    </div>
+                    <div class="cs-height_0 cs-height_lg_40"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container odd-product">
+            <div class="row align-items-center">
+                <div class="col-xl-5 col-lg-5">
+                    <div class="cs-portfolio_img_in cs-shine_hover_1" style="border-radius: 20px;">
+                        <img src="assets/img/BB/laddu.png" alt="Portfolio" class="cs-w100">
+                    </div>
+                    <div class="cs-height_0 cs-height_lg_40"></div>
+                </div>
+                <div class="col-lg-6 offset-xl-1">
+                    <div class="cs-height_0 cs-height_lg_0"></div>
+                    <div class="cs-section_heading cs-style1 ">
+                        <!-- <h3 class="cs-section_subtitle">Project 01</h3> -->
+                        <h2 class="cs-font_50 cs-m0">Healthy Snack - <br><span class="cs-accent_color">Kesar
+                                Kulfi</span>
+                        </h2>
+                        <div class="cs-height_45 cs-height_lg_20"></div>
+                        <div class="col-lg-12">
+                            <ul class="cs-list cs-style1 cs-mp0 product-description">
+                                <li>
+                                    <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
+                                        data-wow-delay="0.3s">
+                                        <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
+                                                fill="#FF4A17" />
+                                        </svg>
+                                        <span>Delicious & Healthy Snack Option</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
+                                        data-wow-delay="0.3s">
+                                        <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
+                                                fill="#FF4A17" />
+                                        </svg>
+                                        <span>Home maded by mom's hand magic</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
+                                        data-wow-delay="0.3s">
+                                        <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
+                                                fill="#FF4A17" />
+                                        </svg>
+                                        <span>Only Natural Ingredients</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
+                                        data-wow-delay="0.3s">
+                                        <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
+                                                fill="#FF4A17" />
+                                        </svg>
+                                        <span>No added preservetives</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
+                                        data-wow-delay="0.3s">
+                                        <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
+                                                fill="#FF4A17" />
+                                        </svg>
+                                        <span>No added sugar</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
+                                        data-wow-delay="0.3s">
+                                        <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
+                                                fill="#FF4A17" />
+                                        </svg>
+                                        <span>100% Organic & Sustainable</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="cs-height_45 cs-height_lg_20"></div>
+                            <div class="product-title">
+                                <a href="products/product-energy-balls.html" class="cs-text_btn wow fadeInLeft "
+                                    data-wow-duration="0.8s" data-wow-delay="0.2s">
+                                    <span>Know More</span>
+                                    <svg width="26" height="12" viewBox="0 0 26 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M25.5303 6.53033C25.8232 6.23744 25.8232 5.76256 25.5303 5.46967L20.7574 0.696699C20.4645 0.403806 19.9896 0.403806 19.6967 0.696699C19.4038 0.989593 19.4038 1.46447 19.6967 1.75736L23.9393 6L19.6967 10.2426C19.4038 10.5355 19.4038 11.0104 19.6967 11.3033C19.9896 11.5962 20.4645 11.5962 20.7574 11.3033L25.5303 6.53033ZM0 6.75H25V5.25H0V6.75Z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -567,137 +653,110 @@
         </div>
         <!-- Product 3  -->
         <div class="cs-height_100 cs-height_lg_70"></div>
-        <div class="cs-portfolio cs-style2">
-            <div class="cs-gradient_shape"></div>
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-5">
-                        <div class="cs-portfolio_img">
-                            <!-- <h3 class="cs-portfolio_img_title">Showcasing</h3> -->
-                            <div class="cs-portfolio_img_in cs-shine_hover_1" style="border-radius: 20px;">
-                                <img src="assets/img/BB/laddu.png" alt="Portfolio" class="cs-w100">
-                            </div>
-                        </div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-5 col-lg-5">
+                    <div class="cs-portfolio_img_in cs-shine_hover_1" style="border-radius: 20px;">
+                        <img src="assets/img/BB/laddu.png" alt="Portfolio" class="cs-w100">
                     </div>
-                    <div class="col-xl-5 col-lg-7 offset-xl-1">
-                        <div class="cs-height_0 cs-height_lg_35"></div>
-                        <div class="cs-section_heading cs-style1">
-                            <!-- <h3 class="cs-section_subtitle">Project 01</h3> -->
-                            <h2 class="cs-font_50 cs-m0">Fruity Twist - <br><span class="cs-accent_color">Mix-Fruits
-                                    Raisins</span>
-                            </h2>
+                    <div class="cs-height_0 cs-height_lg_40"></div>
+                </div>
+                <div class="col-lg-6 offset-xl-1">
+                    <div class="cs-height_0 cs-height_lg_0"></div>
+                    <div class="cs-section_heading cs-style1 ">
+                        <!-- <h3 class="cs-section_subtitle">Project 01</h3> -->
+                        <h2 class="cs-font_50 cs-m0">Healthy Snack - <br><span class="cs-accent_color">Kesar
+                                Kulfi</span>
+                        </h2>
+                        <div class="cs-height_45 cs-height_lg_20"></div>
+                        <div class="col-lg-12">
+                            <ul class="cs-list cs-style1 cs-mp0 product-description">
+                                <li>
+                                    <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
+                                        data-wow-delay="0.3s">
+                                        <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
+                                                fill="#FF4A17" />
+                                        </svg>
+                                        <span>Delicious & Healthy Snack Option</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
+                                        data-wow-delay="0.3s">
+                                        <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
+                                                fill="#FF4A17" />
+                                        </svg>
+                                        <span>Home maded by mom's hand magic</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
+                                        data-wow-delay="0.3s">
+                                        <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
+                                                fill="#FF4A17" />
+                                        </svg>
+                                        <span>Only Natural Ingredients</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
+                                        data-wow-delay="0.3s">
+                                        <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
+                                                fill="#FF4A17" />
+                                        </svg>
+                                        <span>No added preservetives</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
+                                        data-wow-delay="0.3s">
+                                        <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
+                                                fill="#FF4A17" />
+                                        </svg>
+                                        <span>No added sugar</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
+                                        data-wow-delay="0.3s">
+                                        <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
+                                                fill="#FF4A17" />
+                                        </svg>
+                                        <span>100% Organic & Sustainable</span>
+                                    </a>
+                                </li>
+                            </ul>
                             <div class="cs-height_45 cs-height_lg_20"></div>
-                            <div class="col-lg-12">
-                                <ul class="cs-list cs-style1 cs-mp0">
-                                    <li>
-                                        <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
-                                            data-wow-delay="0.3s">
-                                            <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
-                                                    fill="#FF4A17" />
-                                            </svg>
-                                            <span>Delicious & Healthy Snack Option</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
-                                            data-wow-delay="0.3s">
-                                            <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
-                                                    fill="#FF4A17" />
-                                            </svg>
-                                            <span>Home maded by mom's hand magic</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
-                                            data-wow-delay="0.3s">
-                                            <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
-                                                    fill="#FF4A17" />
-                                            </svg>
-                                            <span>Only Natural Ingredients</span>
-                                        </a>
-                                    </li>
-                                    <!-- <li>
-                                        <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
-                                            data-wow-delay="0.3s">
-                                            <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
-                                                    fill="#FF4A17" />
-                                            </svg>
-                                            <span>Balanced formulation by Experts</span>
-                                        </a>
-                                    </li> -->
-                                    <li>
-                                        <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
-                                            data-wow-delay="0.3s">
-                                            <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
-                                                    fill="#FF4A17" />
-                                            </svg>
-                                            <span>No added preservetives</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
-                                            data-wow-delay="0.3s">
-                                            <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
-                                                    fill="#FF4A17" />
-                                            </svg>
-                                            <span>No added sugar</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
-                                            data-wow-delay="0.3s">
-                                            <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
-                                                    fill="#FF4A17" />
-                                            </svg>
-                                            <span>100% Organic & Sustainable</span>
-                                        </a>
-                                    </li>
-                                    <!-- <li>
-                                        <a class="cs-text_btn cs-type2 wow fadeInLeft" data-wow-duration="0.8s"
-                                            data-wow-delay="0.3s">
-                                            <svg width="26" height="16" viewBox="0 0 26 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
-                                                    fill="#FF4A17" />
-                                            </svg>
-                                            <span>Accessible Healthy Living</span>
-                                        </a>
-                                    </li> -->
-                                </ul>
+                            <div class="product-title">
+                                <a href="products/product-energy-balls.html" class="cs-text_btn wow fadeInLeft "
+                                    data-wow-duration="0.8s" data-wow-delay="0.2s">
+                                    <span>Know More</span>
+                                    <svg width="26" height="12" viewBox="0 0 26 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M25.5303 6.53033C25.8232 6.23744 25.8232 5.76256 25.5303 5.46967L20.7574 0.696699C20.4645 0.403806 19.9896 0.403806 19.6967 0.696699C19.4038 0.989593 19.4038 1.46447 19.6967 1.75736L23.9393 6L19.6967 10.2426C19.4038 10.5355 19.4038 11.0104 19.6967 11.3033C19.9896 11.5962 20.4645 11.5962 20.7574 11.3033L25.5303 6.53033ZM0 6.75H25V5.25H0V6.75Z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                </a>
                             </div>
-                            <div class="cs-height_45 cs-height_lg_20"></div>
-                            <a href="products/product-energy-balls.html" class="cs-text_btn wow fadeInLeft"
-                                data-wow-duration="0.8s" data-wow-delay="0.2s">
-                                <span>Know More</span>
-                                <svg width="26" height="12" viewBox="0 0 26 12" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M25.5303 6.53033C25.8232 6.23744 25.8232 5.76256 25.5303 5.46967L20.7574 0.696699C20.4645 0.403806 19.9896 0.403806 19.6967 0.696699C19.4038 0.989593 19.4038 1.46447 19.6967 1.75736L23.9393 6L19.6967 10.2426C19.4038 10.5355 19.4038 11.0104 19.6967 11.3033C19.9896 11.5962 20.4645 11.5962 20.7574 11.3033L25.5303 6.53033ZM0 6.75H25V5.25H0V6.75Z"
-                                        fill="currentColor"></path>
-                                </svg>
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -921,6 +980,46 @@
     <!-- <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
     <script src="https://files.bpcontent.cloud/2024/11/26/09/20241126090136-RLFJPS10.js"></script> -->
     <script>
+
+        // Function to handle screen size changes
+        function handleScreenResize() {
+            const evenProducts = document.querySelectorAll('.even-product');
+            const oddProducts = document.querySelectorAll('.odd-product');
+            const productTitle = document.querySelectorAll('.product-title');
+            const productDescription = document.querySelectorAll('.product-description');
+            const isMobile = window.innerWidth <= 991;
+
+            if (isMobile) {
+                evenProducts.forEach(product => product.style.display = 'none');
+                oddProducts.forEach(product => product.style.display = '');
+                productDescription.forEach(description => {
+                    description.style.marginLeft = '20px';
+                    description.style.marginRight = '20px';
+                });
+
+                productTitle.forEach(title => {
+                    title.style.textAlign = 'center';
+                })
+            } else {
+                evenProducts.forEach(product => product.style.display = '');
+                oddProducts.forEach(product => product.style.display = 'none');
+                productDescription.forEach(description => {
+                    description.style.marginLeft = '';
+                    description.style.marginRight = '';
+                });
+
+                productTitle.forEach(title => {
+                    title.style.textAlign = '';
+                })
+            }
+        }
+
+        // Add event listener for window resize
+        window.addEventListener('resize', handleScreenResize);
+
+        // Call the function on page load
+        handleScreenResize();
+
         function whatsapp1() {
             var message1 = document.getElementById("message1").value;
             var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
