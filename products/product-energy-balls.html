@@ -315,21 +315,30 @@
                                     </a>
                                 </li>
                             </ul>
-                            <div class="cs-height_20 cs-height_lg_20"></div>
-                            <div class="pdfPopup_container">
-                                <div class="cs-pricing_btn_wrap text-left pdfPopup_card">
-                                    <a class="pdfPopup_button cs-text_btn" data-href="/nutritionalvalues.pdf">
-                                        <span>Nutritional
-                                            Values</span>
-                                        <svg width="26" height="12" viewBox="0 0 26 12" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M25.5303 6.53033C25.8232 6.23744 25.8232 5.76256 25.5303 5.46967L20.7574 0.696699C20.4645 0.403806 19.9896 0.403806 19.6967 0.696699C19.4038 0.989593 19.4038 1.46447 19.6967 1.75736L23.9393 6L19.6967 10.2426C19.4038 10.5355 19.4038 11.0104 19.6967 11.3033C19.9896 11.5962 20.4645 11.5962 20.7574 11.3033L25.5303 6.53033ZM0 6.75H25V5.25H0V6.75Z"
-                                                fill="currentColor"></path>
-                                        </svg>
-                                    </a>
+
+                            <div class="cs-height_30 cs-height_lg_25"></div>
+                            <ul class="cs-single_product_info product-description" style="margin-left: 40px;">
+                                <li><b style="color: rgb(116, 40, 40);">Pack of 7 Nutri Balls</b></li>
+                                <li><b style="color: rgb(116, 40, 40);">MRP: </b>Rs 300/-</li>
+                                <li><b style="color: rgb(116, 40, 40);">Special Price: </b>Rs 199/-</li>
+
+                                <div class="pdfPopup_container">
+                                    <div class="cs-pricing_btn_wrap text-left pdfPopup_card">
+                                        <a class="pdfPopup_button cs-text_btn" data-href="/nutritionalvalues.pdf">
+                                            <span>Nutritional
+                                                Values</span>
+                                            <svg width="26" height="12" viewBox="0 0 26 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M25.5303 6.53033C25.8232 6.23744 25.8232 5.76256 25.5303 5.46967L20.7574 0.696699C20.4645 0.403806 19.9896 0.403806 19.6967 0.696699C19.4038 0.989593 19.4038 1.46447 19.6967 1.75736L23.9393 6L19.6967 10.2426C19.4038 10.5355 19.4038 11.0104 19.6967 11.3033C19.9896 11.5962 20.4645 11.5962 20.7574 11.3033L25.5303 6.53033ZM0 6.75H25V5.25H0V6.75Z"
+                                                    fill="currentColor"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
+                            </ul>
+                            <div class="cs-height_20 cs-height_lg_20"></div>
+
                             <div class="pdfPopup_popup">
                                 <div class="pdfPopup_popupIn">
                                     <button class="pdfPopup_close">Close Report</button>
@@ -339,14 +348,6 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="cs-height_10 cs-height_lg_25"></div>
-                            <ul class="cs-single_product_info">
-                                <li><b style="color: rgb(116, 40, 40);">Pack of 7 Nutri Balls</b></li>
-                                <li><b style="color: rgb(116, 40, 40);">MRP: </b>Rs 300/-</li>
-                                <li><b style="color: rgb(116, 40, 40);">Special Price: </b>Rs 199/-</li>
-                            </ul>
-
                         </div>
                     </div>
                 </div>
@@ -364,6 +365,8 @@
                 </svg>
             </a>
         </div>
+
+
     </section>
 
     <!-- Start ingredient Section -->
@@ -438,21 +441,6 @@
         </div>
     </section>
     <!-- End email bannar-->
-
-    <!-- Start contact Banner -->
-    <div class="cs-banner cs_style_1 cs-bg" data-src="../assets/img/BB/video_bg_3.jpeg">
-        <div class="container">
-            <a href="https://wa.me/message/V5PA4DEGARK7P1" target="_blank" class="cs-banner_title">
-                Lets order <span>healthy</span> snack
-                <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M29 2.5C29 1.11929 27.8807 -2.9306e-07 26.5 -2.93227e-06L4 -6.35263e-07C2.61929 -5.7707e-07 1.5 1.11929 1.5 2.5C1.5 3.88071 2.61929 5 4 5L24 5L24 25C24 26.3807 25.1193 27.5 26.5 27.5C27.8807 27.5 29 26.3807 29 25L29 2.5ZM3.76777 28.7678L28.2678 4.26777L24.7322 0.732231L0.232233 25.2322L3.76777 28.7678Z"
-                        fill="currentColor" />
-                </svg>
-            </a>
-        </div>
-    </div>
-    <!-- End contact Banner -->
 
     <!-- Start Footer -->
     <footer class="cs-fooer">
@@ -619,14 +607,16 @@
         function handleScreenResize() {
             const productTitle = document.querySelectorAll('.pdfPopup_card');
             const productDescription = document.querySelectorAll('.product-description');
+            const productPrice = document.querySelectorAll('.product-price');
             const isMobile = window.innerWidth <= 991;
 
             if (isMobile) {
                 productDescription.forEach(description => {
-                    description.style.marginLeft = '20px';
-                    description.style.marginRight = '20px';
+                    description.style.marginLeft = '22px';
+                    description.style.marginRight = '22px';
                 });
 
+                // productPrice.style.textAlign = 'center';
                 productTitle.forEach(title => {
                     title.style.textAlign = 'center';
                 })
