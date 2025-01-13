@@ -10,7 +10,8 @@
 .cs-main_header {
     background-color: transparent;
     margin-top: 0;
-    color: #5a3a3a;
+    /* color: #5a3a3a; */
+    color: rgb(116, 40, 40);
 }
 
 .cs-gescout_sticky {
@@ -21,7 +22,8 @@
 body {
     padding-top: 0;
     /* background-color: #f6fcfe; */
-    color: #5a3a3a;
+    /* color: #5a3a3a; */
+    color: rgb(116, 40, 40);
     background: radial-gradient(#fff7ad, #ffa9f9);
 }
 
@@ -241,7 +243,7 @@ body {
 .pdfPopup_container {
     display: flex;
     width: 100%;
-    /* justify-content: center; */
+    justify-content: center;
     margin: 20px 0;
 }
 
