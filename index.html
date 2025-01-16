@@ -81,9 +81,9 @@
 </style>
 
 <body>
-    <!-- <div class="topnav">
+    <div class="topnav">
         <p>Website experience updating soon! </p>
-    </div> -->
+    </div>
     <!-- Start Header Section -->
     <section id="header_section">
         <header class="cs-site_header cs-style1 text-uppercase cs-sticky_header">
@@ -249,7 +249,9 @@
         </div>
 
         <div class="container wrapper">
-            <img class="logo" src="assets/img/BB/beyondbitelogo.jpg" width="210" height="120">
+            <img class="logo" src="assets/img/BB/beyondbitelogo.jpg" width="210" height="120"
+                alt="Beyond Bite Logo - Healthy Snacks for Active Lifestyles">
+
             <h1>Beyond Bite
                 <!-- <span class="dot">.</span> -->
             </h1>
@@ -329,7 +331,9 @@
             <div class="row align-items-center">
                 <div class="col-xl-5 col-lg-5">
                     <div class="cs-portfolio_img_in cs-shine_hover_1" style="border-radius: 20px;">
-                        <img src="assets/img/BB/laddu.png" alt="Portfolio" class="cs-w100">
+                        <img src="assets/img/BB/laddu.png"
+                            alt="Delicious and Healthy Laddu by Beyond Bite - Perfect Snack for Active Lifestyles"
+                            class="cs-w100">
                     </div>
                     <div class="cs-height_0 cs-height_lg_40"></div>
                 </div>
@@ -542,7 +546,9 @@
                 </div>
                 <div class="col-xl-5 col-lg-5">
                     <div class="cs-portfolio_img_in cs-shine_hover_1" style="border-radius: 20px;">
-                        <img src="assets/img/BB/products/kesar-cashew.jpg" alt="Portfolio" class="cs-w100">
+                        <img src="assets/img/BB/products/kesar-cashew.jpg"
+                            alt="Kesar Cashew Kulfi by Beyond Bite - Premium and Healthy Frozen Dessert"
+                            class="cs-w100">
                     </div>
                     <div class="cs-height_0 cs-height_lg_40"></div>
                 </div>
@@ -554,7 +560,9 @@
             <div class="row align-items-center">
                 <div class="col-xl-5 col-lg-5">
                     <div class="cs-portfolio_img_in cs-shine_hover_1" style="border-radius: 20px;">
-                        <img src="assets/img/BB/products/kesar-cashew.jpg" alt="Portfolio" class="cs-w100">
+                        <img src="assets/img/BB/products/kesar-cashew.jpg"
+                            alt="Kesar Cashew Kulfi by Beyond Bite - Premium and Healthy Frozen Dessert"
+                            class="cs-w100">
                     </div>
                     <div class="cs-height_0 cs-height_lg_40"></div>
                 </div>
@@ -667,7 +675,9 @@
             <div class="row align-items-center">
                 <div class="col-xl-5 col-lg-5">
                     <div class="cs-portfolio_img_in cs-shine_hover_1" style="border-radius: 20px;">
-                        <img src="assets/img/BB/products/mixfruit-raisins.jpg" alt="Portfolio" class="cs-w100">
+                        <img src="assets/img/BB/products/mixfruit-raisins.jpg"
+                            alt="Mix Fruit Raisins by Beyond Bite - A Healthy and Delicious Snack Option"
+                            class="cs-w100">
                     </div>
                     <div class="cs-height_0 cs-height_lg_40"></div>
                 </div>
@@ -841,7 +851,9 @@
                     <div class="col-lg-2 col-sm-6">
                         <div class="cs-footer_item">
                             <div class="cs-text_widget">
-                                <img src="assets/img/BB/beyondbitelogo.jpg" alt="Logo" width="200" height="120">
+                                <img src="assets/img/BB/beyondbitelogo.jpg"
+                                    alt="Beyond Bite Logo - Healthy Snacks for Active Lifestyles" width="200"
+                                    height="120">
                             </div>
                         </div>
                     </div>
@@ -1074,45 +1086,7 @@
             return true;
         }
 
-        var pdfPopup_buttons = document.querySelectorAll('.pdfPopup_button');
-        var pdfPopup_popups = document.querySelectorAll('.pdfPopup_popup');
-        var pdfPopup_iframes = document.querySelectorAll('.pdfPopup_myIframe');
-        var navbar = document.querySelector('#header_section'); // Replace '.navbar' with your header's actual class or ID
-        var scrollPosition = 0; // To store the scroll position
 
-        // Open popup and disable scrolling on the outer page
-        pdfPopup_buttons.forEach((button) => {
-            button.addEventListener('click', function () {
-                var buttonPDFLink = this.getAttribute("data-href"); // Get the PDF link
-                scrollPosition = window.scrollY;  // Store the current scroll position
-                pdfPopup_popups.forEach((popup) => {
-                    popup.style.display = 'flex'; // Show the popup
-                });
-                pdfPopup_iframes.forEach((iframe) => {
-                    iframe.setAttribute("src", buttonPDFLink); // Set the iframe source
-                });
-                document.body.classList.add('pdfPopup_noScroll'); // Disable outer page scrolling
-                if (navbar) navbar.style.display = 'none';
-            });
-        });
-
-        // Close popup when clicking the close button
-        pdfPopup_popups.forEach((popup) => {
-            popup.addEventListener('click', function (event) {
-                // Check if the clicked element is the close button  OR  click outside the popuparea
-                if (event.target.classList.contains('pdfPopup_close')) {
-                    popup.style.display = 'none'; // Hide the popup
-                    pdfPopup_iframes.forEach((iframe) => {
-                        iframe.removeAttribute("src"); // Clear iframe source
-                    });
-                    document.body.classList.remove('pdfPopup_noScroll'); // Re-enable scrolling
-                    window.scrollTo(0, scrollPosition);
-                    if (navbar) navbar.style.display = '';
-                }
-
-                // || event.target === popup
-            });
-        });
     </script>
 </body>
 
