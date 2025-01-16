@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="assets/css/custom.css">
 </head>
 <style>
-    .topnav {
+     .topnav {
         /* background-color: #f4c3c3; */
         background: linear-gradient(to right, transparent, #f4c3c3, transparent);
         color: green;
@@ -44,7 +44,8 @@
     /* Mobile-specific styles */
     @media (max-width: 768px) {
         .topnav {
-            background: linear-gradient(to right, transparent, #e2c4c4, transparent);
+            /* background: linear-gradient(to right, transparent, #e2c4c4, transparent); */
+            background: linear-gradient(to right, transparent, #f4c3c3, transparent);
             /* background: #e2c4c4; Solid background for mobile */
             margin-bottom: 5px;
             /* Space below the navbar */
@@ -928,12 +929,12 @@
     </footer>
     <!-- End Footer -->
 
-    <!-- <span class="cs-scrollup">
+    <span class="cs-scrollup">
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 10L1.7625 11.7625L8.75 4.7875V20H11.25V4.7875L18.225 11.775L20 10L10 0L0 10Z"
                 fill="currentColor" />
         </svg>
-    </span> -->
+    </span>
 
     <!-- Start Video Popup -->
     <div class="cs-video_popup">
@@ -963,8 +964,8 @@
     <script src="assets/js/main.js"></script>
 
 
-    <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
-    <script src="https://files.bpcontent.cloud/2024/11/26/09/20241126090136-RLFJPS10.js"></script>
+    <!-- <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2024/11/26/09/20241126090136-RLFJPS10.js"></script> -->
 
 
     <!-- <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
@@ -978,8 +979,10 @@
             const productTitle = document.querySelectorAll('.product-title');
             const productDescription = document.querySelectorAll('.product-description');
             const isMobile = window.innerWidth <= 991;
+            const csBtnDown = document.querySelector(".cs-down_btn");
 
             if (isMobile) {
+                csBtnDown.style.display = 'none';
                 evenProducts.forEach(product => product.style.display = 'none');
                 oddProducts.forEach(product => product.style.display = '');
                 productDescription.forEach(description => {
@@ -991,6 +994,7 @@
                     title.style.textAlign = 'center';
                 })
             } else {
+                csBtnDown.style.display = '';
                 evenProducts.forEach(product => product.style.display = '');
                 oddProducts.forEach(product => product.style.display = 'none');
                 productDescription.forEach(description => {
