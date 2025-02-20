@@ -253,18 +253,32 @@ body {
 
 /* Pop Up */
 .pdfPopup_popup {
-    position: fixed;
+    /* position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    /* background: rgba(0, 0, 0, 0.8);  */
     background: radial-gradient(#fff7ad, #ffa9f9);
     display: flex;
     align-items: center;
     justify-content: center;
     display: none;
-    margin: 0;
+    margin: 0; */
+
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background: radial-gradient(#fff7ad, #ffa9f9); */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
 }
 
 /* Add this to make the popup content scrollable */
@@ -322,4 +336,24 @@ body.pdfPopup_noScroll {
     .pdfPopup_close {
         height: 60px;
     }
+}
+
+
+
+.cs-hero_slide {
+    position: relative;
+}
+
+.cs-hero_slide::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 50%, #fff7ad, #ffa9f9);
+    opacity: 0.2;
+    /* Adjust transparency */
+    pointer-events: none;
+    /* Ensures interaction with underlying elements */
 }
