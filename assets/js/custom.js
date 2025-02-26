@@ -47,18 +47,6 @@ function handleScreenResize() {
 // Add event listener for window resize
 window.addEventListener('resize', handleScreenResize);
 
-const key = "rzp_test_weDDw0VkT6aCUm"; //Replace it with your Test Key ID generated from the Dashboard
-const amount = 400000; //in paise
-
-window.onload = function () {
-    const widgetConfig = {
-        "key": key,
-        "amount": amount,
-    };
-    const rzpAffordabilitySuite = new RazorpayAffordabilitySuite(widgetConfig);
-    rzpAffordabilitySuite.render();
-}
-
 function whatsapp1() {
     var message1 = document.getElementById("message1").value;
     var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
