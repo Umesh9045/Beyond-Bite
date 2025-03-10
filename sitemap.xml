@@ -14,12 +14,12 @@
 <url>
   <loc>https://beyondbite.in/products/product-energy-balls.html</loc>
   <lastmod>2024-11-22T11:14:39+00:00</lastmod>
-  <priority>1.00</priority>
+  <priority>0.90</priority>
 </url>
 <url>
   <loc>https://beyondbite.in/products/product-kesar-kulfi.html</loc>
   <lastmod>2024-11-22T11:14:39+00:00</lastmod>
-  <priority>1.00</priority>
+  <priority>0.90</priority>
 </url>
 <!-- <url>
   <loc>https://beyondbite.in/products/product-mix-fruit-raisins.html</loc>
@@ -30,6 +30,12 @@
   <loc>https://beyondbite.in/contact.html</loc>
   <lastmod>2024-11-22T11:14:39+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://tracker.beyondbite.in/</loc>
+  <lastmod>2024-11-22T11:14:39+00:00</lastmod>
+  <priority>0.70</priority>
 </url>
 
 </urlset>
