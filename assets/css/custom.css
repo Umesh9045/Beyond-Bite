@@ -81,7 +81,7 @@ body {
     color: #ff7f57
 }
 
-@keyframes fadeIn {
+/* @keyframes fadeIn {
     from {
         top: 20%;
         opacity: 0
@@ -91,7 +91,8 @@ body {
         top: 100;
         opacity: 1
     }
-}
+} */
+
 
 .row.justify-content-center>div {
     padding: 0 5px
