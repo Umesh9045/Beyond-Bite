@@ -58,41 +58,9 @@
 
 </head>
 
-<style>
-    .topnav {
-        /* background-color: #f4c3c3; */
-        background: linear-gradient(to right, transparent, #f4c3c3, transparent);
-        color: green;
-        height: 30px;
-        text-align: center;
-        line-height: 30px;
-        position: fixed;
-        /* Fixes the nav at the top */
-        top: 0;
-        /* Ensures it sticks to the top */
-        left: 0;
-        width: 100%;
-        /* Makes it span the full width of the screen */
-        z-index: 1000;
-        /* Ensures it stays above other elements */
-    }
-
-    /* Mobile-specific styles */
-    @media (max-width: 768px) {
-        .topnav {
-            /* background: linear-gradient(to right, transparent, #e2c4c4, transparent); */
-            background: linear-gradient(to right, transparent, #f4c3c3, transparent);
-            /* background: #e2c4c4; Solid background for mobile */
-            margin-bottom: 5px;
-            /* Space below the navbar */
-        }
-    }
-</style>
 
 <body>
-    <div class="topnav">
-        <p>₹50 OFF on UPI | Min. ₹500</p>
-    </div>
+    <div id="topnav"></div>
     <!-- Start Header Section -->
     <section id="header_section">
         <header class="cs-site_header cs-style1 text-uppercase cs-sticky_header">
@@ -690,7 +658,7 @@
     <!-- End Video Block -->
 
     <div class="cs-height_100 cs-height_lg_100"></div>
-    <div class="cs-pricing_btn_wrap text-center ">
+    <div class="cs-pricing_btn_wrap text-center">
         <a href="https://forms.office.com/r/5xTKZ8SmaH" target="_blank" class="cs-text_btn">
             <span>Your feedback matters
             </span>
@@ -700,15 +668,8 @@
                     fill="currentColor" />
             </svg>
         </a>
-        </a>
     </div>
-
     <div id="footer"></div>
-    <script>
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('footer').innerHTML = data);
-    </script>
 
     <!-- Start Payment options Popup -->
     <!-- Overlay -->
@@ -807,6 +768,13 @@
     <!-- <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
     <script src="https://files.bpcontent.cloud/2024/11/26/09/20241126090136-RLFJPS10.js"></script> -->
     <script>
+        fetch('components/top-nav.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('topnav').innerHTML = data);
+
+        fetch('components/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
 
         // Function to handle screen size changes
         function handleScreenResize() {

@@ -50,6 +50,7 @@
 </head>
 
 <body>
+    <div id="topnav"></div>
     <!-- Start Header Section -->
     <section id="header_section">
         <header class="cs-site_header cs-style1 text-uppercase cs-sticky_header">
@@ -403,17 +404,7 @@
     <div class="cs-height_60 cs-height_lg_60"></div>
 
     <div id="product-poster-carasol"></div>
-
     <div id="footer"></div>
-    <script>
-        fetch('../product-poster-carasol.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('product-poster-carasol').innerHTML = data);
-
-        fetch('../footer.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('footer').innerHTML = data);
-    </script>
 
     <!-- Start Payment options Popup -->
     <!-- Overlay -->
@@ -461,6 +452,20 @@
     <!-- <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
     <script src="https://files.bpcontent.cloud/2024/11/26/09/20241126090136-RLFJPS10.js"></script> -->
     <script src="https://beyondbite.in/assets/js/custom.js"></script>
+
+    <script>
+        fetch('../components/top-nav.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('topnav').innerHTML = data);
+
+        fetch('../components/product-poster-carasol.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('product-poster-carasol').innerHTML = data);
+
+        fetch('../components/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
 </body>
 
 </html>
