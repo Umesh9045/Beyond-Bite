@@ -4303,7 +4303,8 @@ input {
   border: 2px solid #ff4a17;
   bottom: 25%;
   left: 50%;
-  margin-left: -10px
+  margin-left: -10px;
+  display: none;
 }
 
 .cs-down_btn::before {

@@ -510,6 +510,122 @@
     </div>
     <!-- End Video Block -->
 
+       <!-- Product Posters Carousel -->
+       <div class="container my-5">
+        <h2 class="text-center">Our Nutritious Snacks</h2>
+
+        <!-- Desktop Static View -->
+        <div class="d-none d-md-block">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://beyondbite.in/assets/img/BB/products/Nutri-balls/nutri-balls-2.png"
+                            class="card-img-top" alt="Nutri Balls">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">- Nutri Balls -</h5>
+                            <p class="card-text">A healthy mix of dry fruits & nuts.</p>
+                        </div>
+                        <div class="d-flex gap-2 p-3">
+                            <a href="#" class="btn btn-warning w-50">Order Now</a>
+                            <a href="#" class="btn btn-outline-secondary w-50">Know More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://beyondbite.in/assets/img/BB/products/Kesar-kulfi/Kesar-Kulfi-2.png"
+                            class="card-img-top" alt="Cashew Kesar Kulfi">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">- Cashew Kesar Kulfi -</h5>
+                            <p class="card-text">A royal treat made with cashews and saffron.</p>
+                        </div>
+                        <div class="d-flex gap-2 p-3">
+                            <a href="#" class="btn btn-warning w-50">Order Now</a>
+                            <a href="#" class="btn btn-outline-secondary w-50">Know More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://beyondbite.in/assets/img/BB/products/mix-fruit-raisins/mix-fruits raisins-2.png"
+                            class="card-img-top" alt="Mix Fruit Raisins">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">- Mix Fruit Raisins -</h5>
+                            <p class="card-text">A delightful mix of dried fruits.</p>
+                        </div>
+                        <div class="d-flex gap-2 p-3">
+                            <a href="#" class="btn btn-warning w-50">Order Now</a>
+                            <a href="#" class="btn btn-outline-secondary w-50">Know More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Carousel View -->
+        <div id="productCarousel" class="carousel slide d-block d-md-none" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card text-center">
+                        <img src="https://beyondbite.in/assets/img/BB/products/Nutri-balls/nutri-balls-2.png"
+                            class="card-img-top" alt="Nutri Balls">
+                        <div class="card-body">
+                            <h5 class="card-title">- Nutri Balls -</h5>
+                            <p class="card-text">A healthy mix of dry fruits & nuts.</p>
+                            <div class="d-flex gap-2 p-3">
+                                <a href="#" class="btn btn-warning w-50">Order Now</a>
+                                <a href="#" class="btn btn-outline-secondary w-50">Know More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card text-center">
+                        <img src="https://beyondbite.in/assets/img/BB/products/Kesar-kulfi/Kesar-Kulfi-2.png"
+                            class="card-img-top" alt="Cashew Kesar Kulfi">
+                        <div class="card-body">
+                            <h5 class="card-title">- Cashew Kesar Kulfi -</h5>
+                            <p class="card-text">A royal treat made with cashews and saffron.</p>
+                            <div class="d-flex gap-2 p-3">
+                                <a href="#" class="btn btn-warning w-50">Order Now</a>
+                                <a href="#" class="btn btn-outline-secondary w-50">Know More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card text-center">
+                        <img src="https://beyondbite.in/assets/img/BB/products/mix-fruit-raisins/mix-fruits raisins-2.png"
+                            class="card-img-top" alt="Mix Fruit Raisins">
+                        <div class="card-body">
+                            <h5 class="card-title">- Mix Fruit Raisins -</h5>
+                            <p class="card-text">A delightful mix of dried fruits.</p>
+                            <div class="d-flex gap-2 p-3">
+                                <a href="#" class="btn btn-warning w-50">Order Now</a>
+                                <a href="#" class="btn btn-outline-secondary w-50">Know More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel Indicators (Dots) -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+
     <div id="footer"></div>
     <script>
         fetch('../footer.html')
