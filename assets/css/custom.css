@@ -198,6 +198,30 @@ body {
     }
 }
 
+.video-container-yt {
+    width: 608px;
+    height: 342px;
+    margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+    .video-container-yt {
+        width: 400px;
+        height: 215px;
+    }
+}
+
+@media (max-width: 300px) {
+    .video-container-yt {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        align-self: center;
+        align-content: center;
+    }
+}
+
+
 .slider-wrapper {
     width: 90%;
     max-width: 1536px;

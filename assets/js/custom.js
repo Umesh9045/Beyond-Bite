@@ -13,40 +13,6 @@ function payCOD() {
 }
 
 
-// Function to handle screen size changes
-function handleScreenResize() {
-    const productTitle = document.querySelectorAll('.pdfPopup_card');
-    const productDescription = document.querySelectorAll('.product-description');
-    const productPrice = document.querySelectorAll('.product-price');
-    const isMobile = window.innerWidth <= 991;
-
-    if (isMobile) {
-        productDescription.forEach(description => {
-            description.style.marginLeft = '30px';
-            description.style.marginRight = '30px';
-        });
-
-        // productPrice.style.textAlign = 'center';
-        productTitle.forEach(title => {
-            title.style.textAlign = 'center';
-        })
-    } else {
-        evenProducts.forEach(product => product.style.display = '');
-        oddProducts.forEach(product => product.style.display = 'none');
-        productDescription.forEach(description => {
-            description.style.marginLeft = '';
-            description.style.marginRight = '';
-        });
-
-        productTitle.forEach(title => {
-            title.style.textAlign = '';
-        })
-    }
-}
-
-// Add event listener for window resize
-window.addEventListener('resize', handleScreenResize);
-
 function whatsapp1() {
     var message1 = document.getElementById("message1").value;
     var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
