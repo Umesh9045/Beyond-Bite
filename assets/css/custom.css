@@ -104,7 +104,7 @@ body {
     }
 }
 
-/* @media (max-width:425.98px) {
+@media (max-width:425.98px) {
     .cs-video_popup iframe {
         width: 370px;
         height: 180px
@@ -115,7 +115,7 @@ body {
     .cs-video_popup iframe {
         width: 300px
     }
-} */
+}
 
 /* Custom CSS for Bootstrap Table */
 .custom-table {
