@@ -34,13 +34,13 @@
 
 body,
 html {
-  /* color: rgba(254, 254, 254, 0.7); */
+  color: rgba(254, 254, 254, 0.7);
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.6em;
   overflow-x: hidden;
-  /* background-color: #181818; */
+  background-color: #181818;
 }
 
 h1,
@@ -838,13 +838,13 @@ hr {
   color: #fff;
 }
 
-/* .cs-primary_color {
+.cs-primary_color {
   color: #FEFEFE;
 }
 
 .cs-ternary_color {
   color: #999696;
-} */
+}
 
 .cs-accent_color,
 .cs-accent_color_hover:hover {
@@ -870,7 +870,7 @@ hr {
 
 .cs-primary_bg,
 .cs-primary_bg_hover:hover {
-  /* background-color: #FEFEFE; */
+  background-color: #FEFEFE;
 }
 
 .cs-gradient_bg_1 {
@@ -4048,7 +4048,7 @@ label {
   cursor: pointer;
   border: 2px solid currentColor;
   border-radius: 50%;
-  /* color: #fff; */
+  color: #fff;
 }
 
 .cs-site_header.cs-style1 .cs-icon_btn .cs-icon_btn_in {
@@ -5775,7 +5775,6 @@ label {
   bottom: 25%;
   left: 50%;
   margin-left: -10px;
-  display: none;
 }
 
 .cs-down_btn::before {
