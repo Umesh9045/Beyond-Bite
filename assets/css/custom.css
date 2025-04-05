@@ -512,3 +512,31 @@ body.pdfPopup_noScroll {
         transform: translateY(0);
     }
 }
+
+
+.cs-whatsapp {
+    position: fixed;
+    bottom: 30px; /* Always visible */
+    right: 20px; /* Adjust if needed to position near scroll-up */
+    color: #fff;
+    padding: 5px;
+    height: 52px;
+    width: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .4s ease;
+    z-index: 10;
+    background-color: #25D366;
+    color: white;
+    box-shadow: 0 1px 5px 1px rgba(22, 22, 22, .2);
+    border-radius: 50%;
+    font-size: 24px;
+  }
+  
+  .cs-whatsapp:hover {
+    background-color: #128C7E;
+    color: #fff;
+  }
+  
