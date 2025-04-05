@@ -1,3 +1,25 @@
+.cs-form_field {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 15px;
+  outline: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  /* border: 2px solid #999696; */
+  border: 2px solid rgb(116, 40, 40);
+  ;
+  background-color: transparent;
+  color: black;
+}
+
+.cs-form_field:focus {
+  border-color: #FF4A17;
+}
+
+label {
+  margin-bottom: 12px;
+}
 
 body,
 html {
