@@ -321,6 +321,8 @@
 
     </section>
 
+
+
     <div class="cs-section_heading cs-style1 text-center">
         <!-- Buy Now Button -->
         <!-- <button onclick="showPaymentOptions()" class="cs-btn cs-style1" style="margin-top: 30px;">
@@ -340,7 +342,8 @@
             </svg>
         </a>
     </div>
-    <div class="pdfPopup_container">
+    <!-- pdf popup  -->
+    <!-- <div class="pdfPopup_container">
         <div class="cs-pricing_btn_wrap text-center pdfPopup_card">
             <a class="pdfPopup_button cs-text_btn" data-href="https://beyondbite.in/nutritionalvalues.pdf">
                 <span>Nutritional Values</span>
@@ -351,7 +354,83 @@
                 </svg>
             </a>
         </div>
-    </div>
+    </div> -->
+
+
+        <!-- FAQ -->
+    <section class="faq" id="faq" aria-labelledby="faq-heading">
+        <h2 id="faq-heading">FAQs</h2>
+        <div class="faq-list" role="list">
+
+            <!-- Special Offering -->
+            <div class="faq-item" role="button" tabindex="0" aria-expanded="false" aria-controls="faq1">
+                <div class="faq-q">🎉 What special offers do you provide?</div>
+                <div class="faq-toggle">+</div>
+            </div>
+            <div class="faq-a" id="faq1">
+                We deliver <b>fresh within 24 hours in Nashik</b> 🚚 with <b>free local delivery</b>.
+                Extra discounts are available for <b>custom orders, bulk packs, and gifting</b>.
+            </div>
+
+            <!-- What are Nutri Balls -->
+            <div class="faq-item" role="button" tabindex="0" aria-expanded="false" aria-controls="faq2">
+                <div class="faq-q">🤔 What exactly are Nutri Balls?</div>
+                <div class="faq-toggle">+</div>
+            </div>
+            <div class="faq-a" id="faq2">
+                Nutri Balls are <b>wholesome, bite-sized energy snacks</b> made with <b>premium nuts, dates & seeds</b>.
+                They’re <b>100% natural, preservative-free, vegan</b> - the perfect healthy alternative to junk food.
+            </div>
+
+            <!-- Vegan + Ingredients -->
+            <div class="faq-item" role="button" tabindex="0" aria-expanded="false" aria-controls="faq3">
+                <div class="faq-q">🌱 Are they vegan? What’s inside them?</div>
+                <div class="faq-toggle">+</div>
+            </div>
+            <div class="faq-a" id="faq3">
+                Yes! Nutri Balls are <b>100% vegan & vegetarian</b>.
+                Made from <b>almonds, cashews, dates, pumpkin seeds, chia seeds, sunflower seeds, shatavari & more</b>.
+                <b>No preservatives, no artificial flavors</b> - just pure nutrition.
+            </div>
+
+            <!-- Storage + Shelf Life -->
+            <div class="faq-item" role="button" tabindex="0" aria-expanded="false" aria-controls="faq4">
+                <div class="faq-q">📦 How do I store them & how long do they last?</div>
+                <div class="faq-toggle">+</div>
+            </div>
+            <div class="faq-a" id="faq4">
+                Store them in a <b>cool, dry place</b> or an <b>airtight container</b>.
+                They stay fresh for <b>up to 180 days</b> - though most customers finish them much sooner 😉.
+            </div>
+
+            <!-- Gifting -->
+            <div class="faq-item" role="button" tabindex="0" aria-expanded="false" aria-controls="faq5">
+                <div class="faq-q">🎁 Can I gift Nutri Balls?</div>
+                <div class="faq-toggle">+</div>
+            </div>
+            <div class="faq-a" id="faq5">
+                Absolutely! 💝 Nutri Balls make a <b>perfect healthy gift</b> for family, friends, or colleagues.
+                We also offer <b>customized gift packs & personalized packaging</b> for special occasions.
+            </div>
+
+            <!-- Ordering & Delivery -->
+            <div class="faq-item" role="button" tabindex="0" aria-expanded="false" aria-controls="faq5">
+                <div class="faq-q">🛒 How can I order Nutri Balls & how will they be delivered?</div>
+                <div class="faq-toggle">+</div>
+            </div>
+            <div class="faq-a" id="faq5">
+                You can place your order:
+                - Directly from our website <b>(click “Order Now”)</b>
+                - Or instantly on <a href="https://wa.me/message/V5PA4DEGARK7P1" target="_blank">WhatsApp</a> 📲
+
+                ✅ <b>Free local delivery in Nashik</b> within 24 hours - delivered by the Beyond Bite team.
+                🚚 For other cities, we ship via <b>trusted courier partners</b>. You’ll get live tracking updates here:
+                <a href="https://tracker.beyondbite.in/" target="_blank">tracker.beyondbite.in</a>
+            </div>
+        </div>
+    </section>
+
+    
     <!-- Ingredients Section -->
     <section id="ingredients">
         <div class="cs-height_80 cs-height_lg_45"></div>
@@ -488,7 +567,7 @@
                                 <button onclick="showPaymentOptions()" class="btn btn-warning w-50">
                                     <span style="font-weight:600;">Order Now</span>
                                 </button>
-                                <button onclick="opneWhatsAppShare('Inquirey for Trial Pack')"
+                                <button onclick="opneWhatsAppShare('Inquiry for Trial Pack')"
                                     class="btn btn-success w-50"
                                     style="display:flex;align-items:center;justify-content:center;gap:8px;font-weight:600;">
                                     Chat & Order
@@ -531,7 +610,6 @@
         </div>
 
 
-
         <!-- ✅ Place script AFTER HTML -->
         <script>
             function opneWhatsAppShare(message) {
@@ -550,7 +628,7 @@
                     return;
                 }
 
-                const message = `Inquirey For Custom Pack of ${qty} Kg`;
+                const message = `Inquiry For Custom Pack of ${qty} Kg`;
                 opneWhatsAppShare(message);
             }
         </script>
@@ -566,78 +644,7 @@
         <!-- </div> -->
     </section>
 
-    <!-- FAQ -->
-    <section class="faq" id="faq" aria-labelledby="faq-heading">
-        <h2 id="faq-heading">FAQs</h2>
-        <div class="faq-list" role="list">
 
-            <!-- Special Offering -->
-            <div class="faq-item" role="button" tabindex="0" aria-expanded="false" aria-controls="faq1">
-                <div class="faq-q">🎉 What special offers do you provide?</div>
-                <div class="faq-toggle">+</div>
-            </div>
-            <div class="faq-a" id="faq1">
-                We deliver <b>fresh within 24 hours in Nashik</b> 🚚 with <b>free local delivery</b>.
-                Extra discounts are available for <b>custom orders, bulk packs, and gifting</b>.
-            </div>
-
-            <!-- What are Nutri Balls -->
-            <div class="faq-item" role="button" tabindex="0" aria-expanded="false" aria-controls="faq2">
-                <div class="faq-q">🤔 What exactly are Nutri Balls?</div>
-                <div class="faq-toggle">+</div>
-            </div>
-            <div class="faq-a" id="faq2">
-                Nutri Balls are <b>wholesome, bite-sized energy snacks</b> made with <b>premium nuts, dates & seeds</b>.
-                They’re <b>100% natural, preservative-free, vegan</b> - the perfect healthy alternative to junk food.
-            </div>
-
-            <!-- Vegan + Ingredients -->
-            <div class="faq-item" role="button" tabindex="0" aria-expanded="false" aria-controls="faq3">
-                <div class="faq-q">🌱 Are they vegan? What’s inside them?</div>
-                <div class="faq-toggle">+</div>
-            </div>
-            <div class="faq-a" id="faq3">
-                Yes! Nutri Balls are <b>100% vegan & vegetarian</b>.
-                Made from <b>almonds, cashews, dates, pumpkin seeds, chia seeds, sunflower seeds, shatavari & more</b>.
-                <b>No preservatives, no artificial flavors</b> - just pure nutrition.
-            </div>
-
-            <!-- Storage + Shelf Life -->
-            <div class="faq-item" role="button" tabindex="0" aria-expanded="false" aria-controls="faq4">
-                <div class="faq-q">📦 How do I store them & how long do they last?</div>
-                <div class="faq-toggle">+</div>
-            </div>
-            <div class="faq-a" id="faq4">
-                Store them in a <b>cool, dry place</b> or an <b>airtight container</b>.
-                They stay fresh for <b>up to 180 days</b> - though most customers finish them much sooner 😉.
-            </div>
-
-            <!-- Gifting -->
-            <div class="faq-item" role="button" tabindex="0" aria-expanded="false" aria-controls="faq5">
-                <div class="faq-q">🎁 Can I gift Nutri Balls?</div>
-                <div class="faq-toggle">+</div>
-            </div>
-            <div class="faq-a" id="faq5">
-                Absolutely! 💝 Nutri Balls make a <b>perfect healthy gift</b> for family, friends, or colleagues.
-                We also offer <b>customized gift packs & personalized packaging</b> for special occasions.
-            </div>
-
-            <!-- Ordering & Delivery -->
-            <div class="faq-item" role="button" tabindex="0" aria-expanded="false" aria-controls="faq5">
-                <div class="faq-q">🛒 How can I order Nutri Balls & how will they be delivered?</div>
-                <div class="faq-toggle">+</div>
-            </div>
-            <div class="faq-a" id="faq5">
-                You can place your order:
-                - Directly from our website <b>(click “Order Now”)</b>
-                - Or instantly on <a href="https://wa.me/message/V5PA4DEGARK7P1" target="_blank">WhatsApp</a> 📲
-
-                ✅ <b>Free local delivery in Nashik</b> within 24 hours - delivered by the Beyond Bite team.
-                🚚 For other cities, we ship via <b>trusted courier partners</b>. You’ll get live tracking updates here:
-                <a href="https://tracker.beyondbite.in/" target="_blank">tracker.beyondbite.in</a>
-            </div>
-        </div>
-    </section>
 
 
     <!-- <div id="product-poster-carasol"></div> -->

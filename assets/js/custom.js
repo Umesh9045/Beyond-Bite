@@ -48,7 +48,7 @@ function orderCustomPack() {
         return;
     }
 
-    const message = `Inquirey For Custom Pack of ${qty}`;
+    const message = `Inquiry For Custom Pack of ${qty}`;
     opneWhatsAppShare(message);
 }
 
