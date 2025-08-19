@@ -516,8 +516,10 @@ body.pdfPopup_noScroll {
 
 .cs-whatsapp {
     position: fixed;
-    bottom: 30px; /* Always visible */
-    right: 20px; /* Adjust if needed to position near scroll-up */
+    bottom: 30px;
+    /* Always visible */
+    right: 20px;
+    /* Adjust if needed to position near scroll-up */
     color: #fff;
     padding: 5px;
     height: 52px;
@@ -533,10 +535,206 @@ body.pdfPopup_noScroll {
     box-shadow: 0 1px 5px 1px rgba(22, 22, 22, .2);
     border-radius: 50%;
     font-size: 24px;
-  }
-  
-  .cs-whatsapp:hover {
+}
+
+.cs-whatsapp:hover {
     background-color: #128C7E;
     color: #fff;
-  }
-  
+}
+
+
+
+/* FAQ container */
+.faq {
+    max-width: 920px;
+    margin: 28px auto;
+    padding: 10px;
+}
+
+.faq h2 {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.faq-list {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    padding: 6px;
+    margin-top: 12px;
+}
+
+/* FAQ item */
+.faq-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    transition: background 0.2s ease;
+    will-change: background;
+    /* hint browser */
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.faq-item:hover {
+    background: rgba(0, 0, 0, 0.04);
+}
+
+/* Question text */
+.faq-q {
+    font-weight: 700;
+}
+
+/* Answer */
+.faq-a {
+    overflow: hidden;
+    max-height: 0;
+    /* collapsed */
+    opacity: 0;
+    transform: scaleY(0.95);
+    transform-origin: top;
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease;
+    padding: 0 14px;
+}
+
+.faq-a.open {
+    opacity: 1;
+    transform: scaleY(1);
+    padding: 12px 14px;
+    max-height: none;
+    /* no height animation */
+}
+
+/* Toggle (+ / −) */
+.faq-toggle {
+    font-weight: bold;
+    font-size: 20px;
+    transition: transform 0.25s ease;
+    will-change: transform;
+}
+
+.faq-item[aria-expanded="true"] .faq-toggle {
+    transform: rotate(180deg);
+}
+
+
+/* Lobable  */
+:root {
+    --bg: #0f0f10;
+    --fg: #f6f7f9;
+    /* --muted: #a9b0bb; */
+    --primary: #5d8f6f;
+    --primary-contrast: #ffffff;
+    --card: #f6f7f9;
+    --card-border: #f6f7f9;
+    --accent: #2a2f36;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.card {
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-6px) scale(1.03);
+    /* box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3); */
+    /* border-color: var(--primary); */
+}
+
+/* Optional: subtle animation for card-title */
+/* .card:hover .card-title {
+    color: var(--primary);
+    transition: color 0.3s ease;
+} */
+
+
+.card-img {
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 16px;
+    display: grid;
+    gap: 12px;
+}
+
+.card-title {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.card-text {
+    margin: 0;
+    color: var(--muted);
+}
+
+.price {
+    font-weight: 600;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.tile {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    padding: 16px;
+    border-radius: 12px;
+}
+
+.tile h3 {
+    margin: 0 0 6px;
+    font-size: 1rem;
+}
+
+.tile p {
+    margin: 0;
+    color: var(--muted);
+}
+
+/* Responsive */
+@media (max-width: 920px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 520px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}

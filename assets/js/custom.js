@@ -30,6 +30,28 @@ function whatsapp1() {
     return true;
 }
 
+function opneWhatsAppShare(message) {
+    // Replace with your WhatsApp number
+    const phoneNumber = "919876543210";
+    const encodedMessage = encodeURIComponent(message);
+    const waUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+    window.open(waUrl, "_blank");
+}
+
+// For custom pack button
+function orderCustomPack() {
+    const qtyInput = document.getElementById("customPackQty");
+    const qty = parseInt(qtyInput.value);
+
+    if (!qty || qty < 1) {
+        alert("Please enter a valid quantity. (MOQ = 1 kg)");
+        return;
+    }
+
+    const message = `Inquirey For Custom Pack of ${qty}`;
+    opneWhatsAppShare(message);
+}
+
 var pdfPopup_buttons = document.querySelectorAll('.pdfPopup_button');
 var pdfPopup_popups = document.querySelectorAll('.pdfPopup_popup');
 var pdfPopup_iframes = document.querySelectorAll('.pdfPopup_myIframe');
