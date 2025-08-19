@@ -22,7 +22,7 @@ function whatsapp1() {
         return false;
     }
 
-    var url = "https://wa.me/+919359889291?text=" +
+    var url = "https://wa.me/919359889291?text=" +
         "*Message :* " + message1 + "%0a" + "%0a" +
         "*- Requested from BeyondBite Web -*";
 
@@ -32,7 +32,7 @@ function whatsapp1() {
 
 function opneWhatsAppShare(message) {
     // Replace with your WhatsApp number
-    const phoneNumber = "919876543210";
+    const phoneNumber = "919359889291";
     const encodedMessage = encodeURIComponent(message);
     const waUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
     window.open(waUrl, "_blank");
